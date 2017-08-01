@@ -3,6 +3,7 @@ import template from './app.component.html';
 import style from './app.component.scss';
 
 import { Hero } from './hero';
+import { HEROES } from './hero.service';
 
 @Component({
     selector: 'app',
@@ -11,11 +12,13 @@ import { Hero } from './hero';
 })
 
 export class AppComponent {
-    
-    title = 'Tour of Heroes';
-    
-    hero: Hero = {
-        id: 1,
-        name: 'Windstorm'
-    };
+
+    heroes: Hero[] = HEROES;
+
+    selectedHero: Hero;
+
+    onSelect(hero: Hero) {
+        this.selectedHero = hero;
+    }
+
  }
