@@ -9,17 +9,11 @@ import { AppComponent } from "./app.component";
 @NgModule({
     imports: [
         FormsModule,
-        ReactiveFormsModule,
         BrowserModule,
-        HttpModule,
-        NgbModule.forRoot(),
-        ReactiveFormsModule,
     ],
     declarations: [
         AppComponent,
     ],
-    providers: [],
-    entryComponents: [],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
