@@ -5,12 +5,9 @@ import style from './app.component.scss';
 @Component({
     selector: 'app',
     template,
-    styles: [style],
-    providers: []
+    styles: [style]
 })
 
 export class AppComponent {
-
     title = 'Tour of heroes;'
-
  }
